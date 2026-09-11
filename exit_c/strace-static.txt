@@ -1,0 +1,16 @@
+execve("./exitStatic", ["./exitStatic"], 0x7ffea3a0fc30 /* 21 vars */) = 0
+brk(NULL)                               = 0xcba000
+brk(0xcbad00)                           = 0xcbad00
+arch_prctl(ARCH_SET_FS, 0xcba380)       = 0
+set_tid_address(0xcba650)               = 22430
+set_robust_list(0xcba660, 24)           = 0
+rseq(0xcbaca0, 0x20, 0, 0x53053053)     = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+readlink("/proc/self/exe", "/home/comporg26/angelina_avetisy"..., 4096) = 63
+getrandom("\x06\xe9\xc6\xc2\x46\xa3\x41\x4a", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xcbad00
+brk(0xcdbd00)                           = 0xcdbd00
+brk(0xcdc000)                           = 0xcdc000
+mprotect(0x4a0000, 16384, PROT_READ)    = 0
+exit_group(42)                          = ?
++++ exited with 42 +++
